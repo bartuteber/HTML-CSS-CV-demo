@@ -84,7 +84,7 @@ a .fab {
   color: white;
 }
 
-.course, .skills {
+.course .skills {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -107,18 +107,24 @@ a .fab {
 .course .descrition p {
   padding-left: 1em;
 }
-
-.skills .column {
-  -ms-flex: 0 0 50%%;
-  flex: 0 0 50%;
-  max-width: 50%;
+.column-knowledge {
+  display: inline-block;
+  max-width: 30%;
+  margin-right: 20%;
 }
 
-.skills .column ul, ul.job-description {
+.knowledge {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.column-knowledge ul, ul.job-description {
   list-style-type: none;
 }
 
-.skills .column ul > li:before {
+.skills .column-knowledge ul > li:before {
   content: "►";
   padding-right: 0.5em;
   color: #509e98;
@@ -137,6 +143,21 @@ ul.job-description li:before{
   content: "✔";
   padding-right: 0.5em;
   color: #509e98;
+}
+.projects1{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.projects2{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.project{
+  display:inline-block;
+  max-width: 40%;
+  margin-right: 10%;
 }
 
 footer {
